@@ -1,7 +1,6 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-<audio controls="controls" autoplay="autoplay" src="{{ url_for('static', filename='output.mp3') }}" type="audio/mpeg"></audio>
   {% for post in posts %}
     <article class="media content-section">
       <div class="media-body">

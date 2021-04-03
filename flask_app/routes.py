@@ -147,3 +147,12 @@ def delete_post(post_id):
     db.session.commit()
     flash('Your post has been deleted!', 'success')
     return redirect(url_for('index'))
+
+@app.route('/tts', methods=['GET', 'POST'])
+def tts():
+    if request.method == 'GET':
+        return render_template('tts.html')
+
+    else:
+        Input = request.form.get('Input')
+        # WHAT TO DO HERE
